@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "dependencies": {
+    "@theia/core": "latest",
+    "@theia/preferences": "latest"
+  },
+  "devDependencies": {
+    "@theia/cli": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn build && yarn run download:plugins",
+    "clean": "theia clean",
+    "build": "theia build --mode development",
+    "start": "theia start --plugins=local-dir:plugins",
+    "download:plugins": "theia download:plugins"
+  },
+  "theiaPluginsDir": "plugins",
+  "theiaPlugins": {
+    "vscode-builtin-extensions-pack": "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.50.1/file/eclipse-theia.builtin-extension-pack-1.50.1.vsix"
+  },
+  "theiaPluginsExcludeIds": []
+}

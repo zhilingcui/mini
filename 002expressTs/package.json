@@ -1,0 +1,26 @@
+{
+  "name": "expressts",
+  "version": "1.0.0",
+  "description": "创建该项目的目的是方便创建一个简易的使用ts语法的express程序，并包含了通用的eslint语法",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index",
+    "dev": "nodemon -e ts --exec ts-node index",
+    "build": "node esbuild.mjs",
+    "server": "node ./dist/index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.56.0",
+    "globals": "^15.8.0",
+    "typescript-eslint": "^7.17.0"
+  }
+}
