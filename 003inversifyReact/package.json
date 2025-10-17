@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@alifd/next": "^1.27.32",
     "classnames": "^2.5.1",
     "events": "^3.3.0",
     "intl-messageformat": "^10.7.16",

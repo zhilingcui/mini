@@ -1,3 +1,7 @@
-import { commonModule } from './module';
+import { commonModule } from "./module";
+import { Hotkey } from "./hotkey/Hotkey";
+import { WrapperLog } from "./wrapperLog/WrapperLog";
 
-export default [commonModule]
+
+export { commonModule, Hotkey, WrapperLog };
+

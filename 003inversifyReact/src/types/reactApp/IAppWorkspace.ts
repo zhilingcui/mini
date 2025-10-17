@@ -1,5 +1,5 @@
 export interface IAppWorkspace {
-  render(props?: any): React.FunctionComponentElement<any>;
+  render(props?: any): React.ReactNode;
 }
 
 export const NIAppWorkspace = {
