@@ -1,4 +1,4 @@
-import { init, IgniterModule } from "@/fronted";
+import { init, IgniterModule } from "@/frontend";
 import { NIAppWorkspace, type IContainer, type IAppWorkspace } from "@/types";
 import { ContainerModule, type Container } from "inversify";
 import { AppWorkspace } from "./AppWorkspace";
