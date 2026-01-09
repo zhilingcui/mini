@@ -2,6 +2,7 @@ import { useState } from "react";
 import { TestHotkeyView } from "./TestHotkeyView";
 import { TestWrapperLogView } from "./TestWrapperLogView";
 import { TestGlobalLocaleView } from "./TestGlobalLocaleView";
+import { TestIntlMessageManagerView } from "./TestIntlMessageManagerView";
 
 export function AppWorkspaceView() {
   const [activeMenu, setActiveMenu] = useState<string>("log");
@@ -10,6 +11,7 @@ export function AppWorkspaceView() {
     { key: "log", label: "log测试", component: <TestWrapperLogView /> },
     { key: "hotkey", label: "hotKey测试", component: <TestHotkeyView /> },
     { key: "locale", label: "GlobalLocale测试", component: <TestGlobalLocaleView /> },
+    { key: "intl", label: "IntlMessageManager测试", component: <TestIntlMessageManagerView /> },
   ];
 
   const activeMenuItem =

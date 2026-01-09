@@ -1,5 +1,4 @@
-import type { ILogOptions, IWrapperLog } from "@/types";
-import { isObject } from "@/utils";
+import { isObject, type ILogOptions, type IWrapperLog } from "@/types";
 import { injectable, postConstruct } from "inversify";
 
 const defaultOptions: ILogOptions = {

@@ -83,7 +83,7 @@ export class GlobalLocale implements IGlobalLocale {
     this.emitter?.setMaxListeners(0);
     this.logger?.setOptions({
       bizName: "GlobalLocale",
-      level: "debug",
+      level: "log",
     });
   }
 
