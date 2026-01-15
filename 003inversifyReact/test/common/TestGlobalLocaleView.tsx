@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { useOptionalInjection } from "inversify-react";
 import { NIGlobalLocale, type IGlobalLocale, type II18nData } from "@/types";
 
-export function TestGlobalLocaleView(props?: any): React.ReactNode {
+export function TestGlobalLocaleView(): ReactNode {
   const globalLocale: IGlobalLocale | undefined = useOptionalInjection(
     NIGlobalLocale.kind
   );

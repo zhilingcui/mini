@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { useOptionalInjection } from "inversify-react";
 import { NIIntlMessageManager, NIGlobalLocale, type IIntlMessageManager, type IIntlMessage, type IGlobalLocale } from "@/types";
 
-export function TestIntlMessageManagerView(props?: any): React.ReactNode {
+export function TestIntlMessageManagerView(): ReactNode {
   const intlMessageManager: IIntlMessageManager | undefined = useOptionalInjection(
     NIIntlMessageManager.kind
   );

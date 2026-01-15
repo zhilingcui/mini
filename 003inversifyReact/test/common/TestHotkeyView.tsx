@@ -1,7 +1,7 @@
 import { useOptionalInjection } from "inversify-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { NIHotkey, type IHotkey } from "@/types";
-export function TestHotkeyView(props?: any): React.ReactNode {
+export function TestHotkeyView(): ReactNode {
   const hotkey: IHotkey | undefined = useOptionalInjection(NIHotkey.kind);
 
   const [hotkeyCombo, setHotkeyCombo] = useState<string>("ctrl+k");

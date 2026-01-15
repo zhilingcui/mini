@@ -1,8 +1,8 @@
 import { type IWrapperLog, NIWrapperLog, type ILogLevel } from "@/types";
 import { useOptionalInjection } from "inversify-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 
-export function TestWrapperLogView(props?: any): React.ReactNode {
+export function TestWrapperLogView(): ReactNode {
   const wrapperLog: IWrapperLog | undefined = useOptionalInjection(
     NIWrapperLog.kind
   );
